@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="grey">#bfbfbf</color>
+
+    <color name="link_blue">#4d94ff</color>
+    <color name="darkRed">#cc0000</color>
+    <color name="colordarkRed">#cc0000</color>
+
+    <color name="mcam_color_light">#FAFAFA</color>
+    <color name="mcam_color_dark">#424242</color>
+
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#999999</color>
+    <color name="gray_light">#CCCCCC</color>
+    <color name="gray_very_light">#E0E0E0</color>
+    <color name="gray_deep">#666666</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="activity_background">#EEEEEE</color>
+    <color name="main_background">#EEEEEE</color>
+
+    <!-- Material Design Color - Color palette -->
+
+    <!-- Google Logo Color -->
+    <color name="google_blue">#4285F4</color>
+    <color name="google_green">#34A853</color>
+    <color name="google_yellow">#FBBC05</color>
+    <color name="google_red">#EA4335</color>
+
+    <!-- Google Apps Color -->
+
+    <color name="startblue">#09c6df</color>
+    <color name="endblue">#0bcce6</color>
+
+
+    <!--for login-->
+    <color name="colorTextHint">#51d8c7</color>
+
+
+    <!--this is for map navigation view color-->
+
+
+    <color name="mapboxPink">#ee4e8b</color>
+    <color name="mapboxYellow">#d9d838</color>
+    <color name="mapboxRed">#b43b71</color>
+
+    <color name="mapboxWhite">#ffffff</color>
+    <color name="mapboxBlue">#4264fb</color>
+    <color name="mapboxGrayLight">#c6d2e1</color>
+
+
+    <!--end of map navigation color-->
+
+
+
+
+
+    <!--from instag clo colors-->
+
+
+
+
+    <!--end of insta clo colors-->
+
+
+
+
+
+
+    <!--for fierbase login and register-->
+
+    <!--<color name="colorPrimary">#00bcd4</color>-->
+    <!--<color name="colorPrimaryDark">#0097a7</color>-->
+    <!--<color name="colorAccent">#f2fe71</color>-->
+    <color name="bg_login">#26ae90</color>
+    <color name="bg_reg">#2e3237</color>
+    <color name="bg_main">#ffffff</color>
+    <color name="input_login">#222222</color>
+    <color name="input_login_hint">#999999</color>
+    <color name="input_register">#888888</color>
+    <color name="input_register_bg">#3b4148</color>
+    <color name="input_register_hint">#5e6266</color>
+    <color name="btn_login">#26ae90</color>
+    <color name="btn_login_bg">#eceef1</color>
+    <color name="lbl_name">#333333</color>
+    <color name="btn_logut_bg">#ff6861</color>
+
+
+    <!--end of login -->
+
+
+    <color name="colorBackground">@android:color/transparent</color>
+    <color name="colorTintedBackground">#cdcdcd</color>
+
+    <color name="darkTheme_colorPrimary">#2196F3</color>
+    <color name="darkTheme_colorPrimaryDark">#1E88E5</color>
+    <color name="darkTheme_colorAccent">#2196F3</color>
+    <color name="darkTheme_colorBackground">#303030</color>
+    <color name="darkTheme_colorTintedBackground">#424242</color>
+
+    <color name="blackTheme_colorPrimary">#2196F3</color>
+    <color name="blackTheme_colorPrimaryDark">#1E88E5</color>
+    <color name="blackTheme_colorAccent">#2196F3</color>
+    <color name="blackTheme_colorBackground">#000000</color>
+    <color name="blackTheme_colorTintedBackground">#303030</color>
+
+    <color name="classic_colorPrimary">#607d8b</color>
+    <color name="classic_colorPrimaryDark">#455a64</color>
+    <color name="classic_colorAccent">#455a64</color>
+    <color name="classic_colorBackground">@android:color/transparent</color>
+    <color name="classic_colorTintedBackground">#cdcdcd</color>
+
+    <color name="classic_darkTheme_colorPrimary">#37474f</color>
+    <color name="classic_darkTheme_colorPrimaryDark">#263238</color>
+    <color name="classic_darkTheme_colorAccent">#90a4ae</color>
+    <color name="classic_darkTheme_colorBackground">#303030</color>
+    <color name="classic_darkTheme_colorTintedBackground">#263238</color>
+
+    <color name="classic_blackTheme_colorPrimary">#37474f</color>
+    <color name="classic_blackTheme_colorPrimaryDark">#263238</color>
+    <color name="classic_blackTheme_colorAccent">#90a4ae</color>
+    <color name="classic_blackTheme_colorBackground">#000000</color>
+    <color name="classic_blackTheme_colorTintedBackground">#303030</color>
+
+    <color name="splashBackground">#607d8b</color>
+
+    <color name="text_light">#ffffff</color>
+    <color name="text_dark">#000000</color>
+    <color name="tab_indicator">#ffffff</color>
+</resources>
+
+
+
+
+
+
+

@@ -1,0 +1,443 @@
+<resources>
+    <string name="app_name">Fam</string>
+
+    <!-- fragment names -->
+    <string name="edit_profile_fragment">Edit Profile</string>
+    <string name="view_post_fragment">View Post</string>
+    <string name="sign_out_fragment">Sign Out</string>
+    <string name="profile_fragment">Profile</string>
+    <string name="view_profile_fragment">ViewProfile</string>
+    <string name="view_comments_fragment">View Comments</string>
+
+    <!-- dialog names -->
+    <string name="confirm_password_dialog">ConfirmPaswordDialog</string>
+
+    <!-- Firebase messages -->
+    <string name="auth_failed">Failed to Authenticate</string>
+    <string name="auth_success">Authentication Success</string>
+
+    <!-- Firebase database fields -->
+    <string name="dbname_users">users</string>
+    <string name="dbname_user_account_settings">user_account_settings</string>
+    <string name="dbname_photos">photos</string>
+    <string name="dbname_user_photos">user_photos</string>
+    <string name="dbname_following">following</string>
+    <string name="dbname_followers">followers</string>
+    <string name="dbname_stories">stories</string>
+
+    <string name="field_username">username</string>
+    <string name="field_email">email</string>
+    <string name="field_display_name">display_name</string>
+    <string name="field_website">website</string>
+    <string name="field_description">description</string>
+    <string name="field_phone_number">phone_number</string>
+    <string name="field_user_id">user_id</string>
+    <string name="field_likes">likes</string>
+    <string name="field_caption">caption</string>
+    <string name="field_date_created">date_created</string>
+    <string name="field_photo_id">photo_id</string>
+    <string name="field_tags">tags</string>
+    <string name="field_image_path">image_path</string>
+    <string name="field_comments">comments</string>
+    <string name="field_comment">comment</string>
+    <string name="field_image_uri">image_uri</string>
+    <string name="field_video_uri">video_uri</string>
+    <string name="field_story_id">story_id</string>
+    <string name="field_views">views</string>
+    <string name="field_duration">duration</string>
+    <string name="field_profile_photo">profile_photo</string>
+    <string name="field_timestamp">timestamp</string>
+
+
+    <!-- photo types -->
+    <string name="new_photo">new_photo</string>
+    <string name="profile_photo">profile_photo</string>
+
+    <!-- Intent Extras -->
+    <string name="calling_activity">calling_activity</string>
+    <string name="selected_image">selected_image</string>
+    <string name="selected_bitmap">selected_bitmap</string>
+    <string name="return_to_fragment">return_to_fragment</string>
+    <string name="intent_user">intent_user</string>
+    <string name="user_stories">user_stories</string>
+
+    <!-- Bundle arg names -->
+    <string name="user_account_settings">user_account_settings</string>
+    <string name="activity_number">activity_number</string>
+    <string name="bundle_photo">bundle_photo</string>
+    <string name="bundle_user_account_settings">bundle_user_account_settings</string>
+
+    <!-- activity names -->
+    <string name="profile_activity">Profile Activity</string>
+    <string name="search_activity">Search Activity</string>
+    <string name="home_activity">Home Activity</string>
+
+    <!-- strings -->
+    <string name="gallery">GALLERY</string>
+    <string name="photo">PHOTO</string>
+    <string name="string_open_camera">Open Camera</string>
+    <string name="string_next">Next</string>
+    <string name="string_share">Share</string>
+
+    <!-- Dialog Names -->
+    <string name="dialog_add_to_story">AddToStoryDialog</string>
+
+    <!-- Easy Video Player Stuff -->
+    <string name="evp_submit">SUBMIT</string>
+    <string name="evp_retry">RETRY</string>
+
+    <!-- Spring Header Stuff -->
+    <string name="spring_header_behavior">tabian.com.instagramclonetest.springheader.SpringHeaderBehavior</string>
+    <string name="dependent_view_behavior">tabian.com.instagramclonetest.DependentViewBehavior</string>
+
+    <string name="simple_refresh_header_text_below_threshold">below fold</string>
+    <string name="simple_refresh_header_text_above_threshold">above folder</string>
+    <string name="simple_refresh_header_text_refreshing">refreshing...</string>
+
+    <!-- JSON values -->
+    <string name="bitmap">bitmap</string>
+
+    <!-- Error Messages -->
+    <string name="image_load_error">image_load_error</string>
+
+    <!-- JSON keys -->
+    <string name="media_type">media_type</string>
+    <string name="duration">duration</string>
+    <string name="encoded_bitmap">encoded_bitmap</string>
+    <string name="width_scale_factor">width_scale_factor</string>
+    <string name="height_scale_factor">height_scale_factor</string>
+    <string name="video_uri">video_uri</string>
+    <string name="surface_number">surface_number</string>
+    <string name="rotations">rotations</string>
+    <string name="resource_index">resource_index</string>
+    <string name="media_index">media_index</string>
+    <string name="media_source">media_source</string>
+
+    <!-- Material Camera Stuff -->
+    <string name="mcam_defaultDuration">00:00</string>
+    <string name="mcam_permissions_needed">Permissions Needed</string>
+    <string name="mcam_video_perm_warning">Permission to access your microphone and camera is needed, the camera will now close.</string>
+    <string name="mcam_retry">RETRY</string>
+    <string name="mcam_use_video">USE VIDEO</string>
+    <string name="mcam_use_stillshot">USE STILLSHOT</string>
+    <string name="mcam_portrait">Portrait</string>
+    <string name="mcam_portrait_warning">It\'s recommended that you record in landscape. Record in portrait?</string>
+    <string name="mcam_yes">Yes</string>
+    <string name="mcam_error">Error</string>
+    <string name="mcam_video_capture_unsupported">Your device does not support video capture.</string>
+    <string name="mcam_no_audio_access">You haven\'t given access to your microphone; no audio will be recorded.</string>
+    <string name="mcam_file_size_limit_reached">You\'ve reached the maximum file size!</string>
+    <string name="mcam_image_preview_error_title">Image preview error</string>
+    <string name="mcam_image_preview_error_message">Could not decode bitmap</string>
+    <string name="title_activity_likes">LikesActivity</string>
+    <string name="title_activity_share">ShareActivity</string>
+
+
+    <!--this is for famapp nav-->
+
+
+    <string name="nav_header_text">Email@gmail.com</string>
+    <string name="nav_recycler_view">Notification</string>
+    <string name="nav_rule">Family Rule</string>
+    <string name="nav_calendar">Calendar</string>
+    <string name="nav_map">Map</string>
+    <string name="nav_all_members">All Members</string>
+    <string name="nav_all_Random">Random</string>
+
+
+    <string name="nav_fullscreen">FullScreen</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_about">About</string>
+    <string name="nav_pay">Payment</string>
+    <string name="nav_my_apps">My Apps</string>
+    <string name="nav_color">Material Design Color</string>
+    <string name="nav_add_new_post">Post</string>
+
+    <!-- Strings related to Main -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="tab_title_main_1">Home</string>
+    <string name="main_snack_bar">This is a snack bar</string>
+    <string name="main_snack_bar_action">Okay</string>
+
+    <string name="main_card_title">Title goes here</string>
+    <string name="main_card_subtitle">Subtitle here</string>
+    <string name="main_card_details">Details here</string>
+    <string name="main_card_button_1">ACTION 1</string>
+    <string name="main_card_button_2">ACTION 2</string>
+    <string name="main_flat_button_1_clicked">Flat Button 1</string>
+    <string name="main_flat_button_2_clicked">Flat Button 2</string>
+
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_neutral">Neutral</string>
+    <string name="main_dialog_simple">Simple dialog</string>
+    <string name="main_dialog_simple_title">A simple dialog</string>
+    <string name="main_dialog_simple_message">
+        "A Family application metaphor is the unifying theory of a rationalized space and a system of motion. "
+        "\nThe material is grounded in tactile reality, inspired by the study of paper and ink, yet technologically advanced and open to imagination and magic."</string>
+    <string name="main_dialog_single_choice">Single choice dialog</string>
+    <string name="main_dialog_multi_choice">Multi choice dialog</string>
+    <string name="main_dialog_progress_title">Progress dialog...</string>
+    <string name="main_dialog_progress">Progress dialog</string>
+    <string name="main_dialog_data_picker">Date Picker Dialog</string>
+    <string name="main_dialog_data_time">Time Picker Dialog</string>
+    <string name="main_dialog_bottom">Bottom Dialog</string>
+    <string name="main_dialog_fullscreen">Fullscreen Dialog</string>
+    <string name="main_popup_menu">Popup Menu</string>
+
+    <string name="main_widget_toggle_button">Toggle Button</string>
+    <string name="main_widget_switch">Switch</string>
+    <string name="main_widget_check_box">Check Box</string>
+    <string name="main_widget_check_box_1">CheckBox 1</string>
+    <string name="main_widget_check_box_2">CheckBox 2</string>
+    <string name="main_widget_check_box_3">CheckBox 3</string>
+    <string name="main_widget_radio">Radio Group and Radio Buttons</string>
+    <string name="main_widget_radio_button_1">RadioButton 1</string>
+    <string name="main_widget_radio_button_2">RadioButton 2</string>
+    <string name="main_widget_radio_button_3">RadioButton 3</string>
+    <string name="main_widget_seek_bar">Seek Bar</string>
+    <string name="main_widget_progress_bar">Progress Bar</string>
+    <string name="main_widget_text_input_layout">Text Input Layout</string>
+    <string name="main_widget_edit_text">edit text</string>
+    <string name="main_widget_spinner">Spinner</string>
+    <string name="main_widget_data_picker">Date Picker</string>
+    <string name="main_widget_time_picker">Time Picker</string>
+    <!-- Strings related to Scrolling -->
+    <string name="title_activity_scrolling">Family Rule</string>
+    <string name="large_text">
+        "Your Family Application is nice."
+        "\n\nA material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic."
+        "\nSurfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics."
+        "\nThe fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts."
+        "\n\nBold, graphic, intentional."
+        "\n\nThe foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience."
+        "\nAn emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user."
+        "\n\nMotion provides meaning."
+        "\n\nMotion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design."
+        "\nAll action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize."
+        "\nMotion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent."
+        "\n\n3D world."
+        "\n\nThe material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness."
+        "\nOn the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis."
+        "\n\nLight and shadow."
+        "\n\nWithin the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles."
+        "\nShadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp."
+        "\n\nResting elevation."
+        "\n\nAll material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible."
+        "\n\nComponent elevations."
+        "\n\nThe resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app)."
+        "\nComponents may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop)."
+        "\n\nResponsive elevation and dynamic elevation offsets."
+        "\n\nSome component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets."
+        "\nDynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation."
+        "\nOnce the input event is completed or cancelled, the component will return to its resting "
+        "elevation."
+        "\n\nAvoiding elevation interference."
+        "\n\nComponents with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout."
+        "\nOn a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears."
+        "\nOn the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+
+
+    <string name="title_notification">Notification</string>
+    <!-- String related to About -->
+    <string name="title_activity_about">About</string>
+    <string name="about_version">Version: </string>
+    <string name="about_email_intent">About:Family Group</string>
+    <string name="about_not_found_email">Not found email app</string>
+    <string name="about_card1_message">Hey, glad to see you All!</string>
+    <string name="about_card2_title">If you liked the app, feel free to contact Us.</string>
+    <string name="about_google_play">Rate on Google play</string>
+    <string name="about_email">Feedback by E-mail</string>
+    <string name="about_git_hub">show more on GitHub</string>
+    <string name="about_address">Ethiopia, Addis Abebea</string>
+    <string name="about_source_licenses">Ethiopian licenses</string>
+    <string name="share_with">Share with</string>
+
+
+    <!-- String related to RecyclerView -->
+    <string name="title_activity_recycler_view">RecyclerView</string>
+    <string name="tv_recycler_item_1">Swipe down to refresh</string>
+    <string name="tv_recycler_item_2">Swipe left or right to dismiss it</string>
+    <string name="tv_recycler_item_3">Drag up or down to move it</string>
+    <string name="title_activity_share_view">View New Post</string>
+    <string name="share_view_press_it">New post</string>
+    <string name="no_more_data">No more data</string>
+    <string name="item_swipe_dismissed">Dismissed</string>
+    <string name="item_swipe_undo">Undo</string>
+
+
+    <!-- Strings related to Settings -->
+    <string name="settings_category_basic">Basic Settings</string>
+    <string name="settings_category_advanced">Advanced Settings</string>
+    <string name="settings_category_other">Other Settings</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="settings_switch_preference_title">Switch Preference</string>
+    <string name="settings_switch_preference_summary">Switch Preference Summary</string>
+    <string name="settings_check_box_preference_title">Check Box Preference</string>
+    <string name="settings_edit_text_preference_title">Edit Text Preference</string>
+    <string name="settings_edit_text_preference_default_value">Material Design</string>
+    <string name="settings_list_preference_dialog_title">List Preference</string>
+    <string name="settings_list_preference_title">List Preference</string>
+    <string name="settings_multi_select_list_preference_dialog_title">Multi Select List Preference</string>
+    <string name="settings_multi_select_list_preference_title">Multi Select List Preference</string>
+    <string name="settings_preference_click_title">OnPreferenceClickListener</string>
+    <string name="settings_preference_click_to_activity">Click to start an activity</string>
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="pref_on_preference_click">onPreferenceClick</string>
+
+
+    <string name="text_accounts">All Accounts</string>
+    <string name="text_title">Family Meeting System</string>
+    <string name="text_hello">Welcome</string>
+    <string name="hint_title">Title</string>
+    <string name="hint_description">Description</string>
+
+
+    <!--mapbox -->
+
+    <string name="settings">Settings</string>
+    <string name="simulate_route">Simulate Route</string>
+    <string name="language">Language</string>
+    <string name="unit_type">Unit Type</string>
+    <string name="route_profile">Route Profile</string>
+
+    <string name="unit_type_key">unit_type</string>
+    <string name="simulate_route_key">simulate_route</string>
+    <string name="language_key">language</string>
+    <string name="route_profile_key">route_profile</string>
+    <string name="language_default_value_device_locale">device_locale</string>
+
+
+    <string name="error_route_not_available">Current route is not available</string>
+    <string name="error_select_longer_route">Please select a longer route</string>
+    <string name="error_valid_route_not_found">Valid route not found.</string>
+    <string name="explanation_long_press_waypoint">Long press map to place waypoint</string>
+
+<!--this is for setting -->
+    <!-- 1: temperature; 2: unit -->
+    <string name="dash_clock_status">%1$s%2$s</string>
+    <!-- 1: temperature; 2: unit; 3: weather description -->
+    <string name="dash_clock_expanded_title">%1$s%2$s - %3$s</string>
+    <!-- 1: city; 2: country; 3: wind; 4: speed units; 5: pressure; 6: pressure units; 7: humidity -->
+    <string name="dash_clock_expanded_body">%1$s, %2$s\nWind: %3$s %4$s\nPressure: %5$s %6$s\nHumidity: %7$s %%\n</string>
+    <string name="settings_title_units">Units</string>
+    <string name="settings_title_display">Display</string>
+    <string name="settings_title_data">Data</string>
+    <string name="setting_displayDecimalZeroes">Display decimal zeroes</string>
+    <string name="settings_title_location">Location</string>
+    <string name="setting_update_location_automatically">Update location in background</string>
+
+    <string name="location_settings">Location Settings</string>
+    <string name="location_settings_message">Location is not enabled. Do you wish to go to the settings menu?</string>
+    <string name="location_settings_button">Settings</string>
+    <string name="action_weather_map">Weather Map</string>
+    <string name="rain">Rain</string>
+    <string name="temperature">Temperature</string>
+    <string name="action_graphs">Graphs</string>
+
+
+    <string name="setting_dateFormat">Date Format</string>
+    <string name="setting_dateFormatCustom">Custom Date Format</string>
+    <string name="setting_dateFormatCustom_summary">Provide the custom SimpleDateFormat string to be used</string>
+    <string name="setting_lengthUnits">Length units</string>
+    <string name="setting_speedUnits">Speed units</string>
+    <string name="setting_tempUnits">Temperature units</string>
+    <string name="setting_showTempAsInteger">Show temperature only as an integer</string>
+    <string name="setting_pressureUnits">Pressure units</string>
+    <string name="setting_theme">Theme</string>
+    <string name="setting_auto_detect_location">Detect Location</string>
+    <string name="setting_differentiateDaysByTint">Differentiate Days with Color</string>
+    <string name="setting_refreshInterval">Background refresh interval</string>
+    <string name="setting_unit_mps">Meters per second (m/s)</string>
+    <string name="setting_unit_kph">Kilometers per hour (kph)</string>
+    <string name="setting_unit_mph">Miles per hour (mph)</string>
+    <string name="setting_unit_bft">Beaufort wind scale (bft)</string>
+    <string name="setting_unit_kn">Knots (kn)</string>
+    <string name="setting_wind_direction_format">Wind direction format</string>
+    <string name="settings_none">None</string>
+    <string name="setting_apiKey">API key</string>
+    <string name="setting_apiKey_summary">Custom API key for OpenWeatherMap queries</string>
+
+    <string name="setting_unit_Celsuis">Celsius</string>
+    <string name="setting_unit_Fahrenheit">Fahrenheit</string>
+    <string name="setting_unit_Kelvin">Kelvin</string>
+
+    <string name="setting_unit_mm">Millimeters (mm)</string>
+    <string name="setting_unit_in">Inches (in)</string>
+
+    <string name="setting_unit_hpa">hPa</string>
+    <string name="setting_unit_kpa">kPa</string>
+    <string name="setting_unit_mmhg">mm Hg</string>
+    <string name="setting_unit_inhg">in Hg</string>
+
+    <string name="speed_unit_mps">m/s</string>
+    <string name="speed_unit_kph">kph</string>
+    <string name="speed_unit_mph">mph</string>
+    <string name="speed_unit_kn">kn</string>
+
+    <string name="wind_direction_format_none">No indication</string>
+    <string name="wind_direction_format_arrows">Arrows</string>
+    <string name="wind_direction_format_abbreviations">Abbreviations</string>
+
+    <string name="pressure_unit_hpa">hPa</string>
+    <string name="pressure_unit_kpa">kPa</string>
+    <string name="pressure_unit_mmhg">mm Hg</string>
+
+    <string name="setting_theme_fresh">Fresh</string>
+    <string name="setting_theme_classic">Classic</string>
+    <string name="setting_theme_dark">Fresh Dark</string>
+    <string name="setting_theme_classic_dark">Classic Dark</string>
+    <string name="setting_theme_black">Fresh Black</string>
+    <string name="setting_theme_classic_black">Classic Black</string>
+
+    <string name="error_dateFormat">DATE FORMAT ERROR</string>
+
+
+    <!--end of setting-->
+
+</resources>
