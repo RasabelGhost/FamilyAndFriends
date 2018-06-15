@@ -1,6 +1,8 @@
 package com.family.ghost.fam;
 
 import android.app.Application;
+import android.content.Context;
+import android.support.multidex.MultiDex;
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -14,6 +16,13 @@ public class NavigationApplication extends Application {
   private static final String LOG_TAG = NavigationApplication.class.getSimpleName();
   private static final String DEFAULT_MAPBOX_ACCESS_TOKEN = "pk.eyJ1IjoicmFzYWJlbCIsImEiOiJjamh2OHl0aTYwdHpoM3ZxaXV6eXd1OW5zIn0.XrvUsHArOxa7kpRNCCR9sQ";
 
+
+
+//  @Override
+//  protected void attachBaseContext(Context context) {
+//    super.attachBaseContext(context);
+//    MultiDex.install(this);
+//  }
   @Override
   public void onCreate() {
     super.onCreate();

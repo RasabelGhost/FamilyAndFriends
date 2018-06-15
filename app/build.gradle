@@ -10,7 +10,11 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
 
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
     }
     buildTypes {
         release {
@@ -87,6 +91,11 @@ dependencies {
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
     releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
 
+    compile 'com.android.support:multidex:1.0.1'
+
+
+    compile 'com.github.vatsaldesai92:MyDynamicCalendarLibrary:1.0.1'
+    compile 'com.github.AnyChart:AnyChart-Android:0.2.5'
 }
 
 //Firebase

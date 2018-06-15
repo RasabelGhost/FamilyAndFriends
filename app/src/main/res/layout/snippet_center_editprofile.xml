@@ -155,6 +155,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="50dp"
                 android:textColor="@color/black"
+
                 android:background="@drawable/grey_border_bottom"
                 android:id="@+id/textPrivateInfo"/>
 

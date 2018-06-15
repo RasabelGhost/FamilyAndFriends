@@ -121,7 +121,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         // Check for location permission
         permissionsManager = new PermissionsManager(this);
         if (!PermissionsManager.areLocationPermissionsGranted(this)) {
-            recyclerView.setEnabled(false);
+           // recyclerView.setEnabled(false);
             permissionsManager.requestPermissions(this, PERMISSIONS);
         }
 
@@ -166,7 +166,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     @Override
     public void onPermissionResult(boolean granted) {
         if (granted) {
-            recyclerView.setEnabled(true);
+           // recyclerView.setEnabled(true);
         } else {
             Toast.makeText(this, "You didn't grant location permissions.",
                     Toast.LENGTH_LONG).show();
