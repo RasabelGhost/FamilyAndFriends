@@ -17,7 +17,7 @@ import com.family.ghost.fam.materialcamera.MaterialCamera;
 
 
 /**
- * Created by User on 1/8/2018.
+ * Created by Ghost on 1/8/2018.
  */
 
 public class NewStoryActivity extends Activity {

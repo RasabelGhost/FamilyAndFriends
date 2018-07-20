@@ -39,7 +39,7 @@ import com.family.ghost.fam.models.UserAccountSettings;
 import com.family.ghost.fam.models.UserSettings;
 
 /**
- * Created by User on 6/4/2017.
+ * Created by Ghost on 6/4/2018.
  */
 
 public class EditProfileFragment extends Fragment implements
@@ -50,13 +50,10 @@ public class EditProfileFragment extends Fragment implements
     public void onConfirmPassword(String password) {
         Log.d(TAG, "onConfirmPassword: got the password: " + password);
 
-        // Get auth credentials from the user for re-authentication. The example below shows
-        // email and password credentials but there are multiple possible providers,
-        // such as GoogleAuthProvider or FacebookAuthProvider.
+
         AuthCredential credential = EmailAuthProvider
                 .getCredential(mAuth.getCurrentUser().getEmail(), password);
 
-        ///////////////////// Prompt the user to re-provide their sign-in credentials
         mAuth.getCurrentUser().reauthenticate(credential)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
@@ -64,7 +61,7 @@ public class EditProfileFragment extends Fragment implements
                         if(task.isSuccessful()){
                             Log.d(TAG, "User re-authenticated.");
 
-                            ///////////////////////check to see if the email is not already present in the database
+
                             mAuth.fetchProvidersForEmail(mEmail.getText().toString()).addOnCompleteListener(new OnCompleteListener<ProviderQueryResult>() {
                                 @Override
                                 public void onComplete(@NonNull Task<ProviderQueryResult> task) {
@@ -77,7 +74,7 @@ public class EditProfileFragment extends Fragment implements
                                             else{
                                                 Log.d(TAG, "onComplete: That email is available.");
 
-                                                //////////////////////the email is available so update it
+
                                                 mAuth.getCurrentUser().updateEmail(mEmail.getText().toString())
                                                         .addOnCompleteListener(new OnCompleteListener<Void>() {
                                                             @Override
@@ -148,7 +145,7 @@ public class EditProfileFragment extends Fragment implements
         //setProfileImage();
         setupFirebaseAuth();
 
-        //back arrow for navigating back to "ProfileActivity"
+
         ImageView backArrow = (ImageView) view.findViewById(R.id.backArrow);
         backArrow.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -171,10 +168,7 @@ public class EditProfileFragment extends Fragment implements
     }
 
 
-    /**
-     * Retrieves the data contained in the widgets and submits it to the database
-     * Before donig so it chekcs to make sure the username chosen is unqiue
-     */
+
     private void saveProfileSettings(){
         final String displayName = mDisplayName.getText().toString();
         final String username = mUsername.getText().toString();
@@ -184,30 +178,22 @@ public class EditProfileFragment extends Fragment implements
         final long phoneNumber = Long.parseLong(mPhoneNumber.getText().toString());
 
 
-        //case1: if the user made a change to their username
+
         if(!mUserSettings.getUser().getUsername().equals(username)){
 
             checkIfUsernameExists(username);
         }
-        //case2: if the user made a change to their email
+
         if(!mUserSettings.getUser().getEmail().equals(email)){
 
-            // step1) Reauthenticate
-            //          -Confirm the password and email
             ConfirmPasswordDialog dialog = new ConfirmPasswordDialog();
             dialog.show(getFragmentManager(), getString(R.string.confirm_password_dialog));
             dialog.setTargetFragment(EditProfileFragment.this, 1);
 
 
-            // step2) check if the email already is registered
-            //          -'fetchProvidersForEmail(String email)'
-            // step3) change the email
-            //          -submit the new email to the database and authentication
         }
 
-        /**
-         * change the rest of the settings that do not require uniqueness
-         */
+
         if(!mUserSettings.getSettings().getDisplay_name().equals(displayName)){
             //update displayname
             mFirebaseMethods.updateUserAccountSettings(displayName, null, null, 0);
@@ -228,10 +214,7 @@ public class EditProfileFragment extends Fragment implements
 
 
 
-    /**
-     * Check is @param username already exists in teh database
-     * @param username
-     */
+
     private void checkIfUsernameExists(final String username) {
         Log.d(TAG, "checkIfUsernameExists: Checking if  " + username + " already exists.");
 
@@ -296,9 +279,7 @@ public class EditProfileFragment extends Fragment implements
     ------------------------------------ Firebase ---------------------------------------------
      */
 
-    /**
-     * Setup the firebase auth object
-     */
+
     private void setupFirebaseAuth(){
         Log.d(TAG, "setupFirebaseAuth: setting up firebase auth.");
 
@@ -329,10 +310,9 @@ public class EditProfileFragment extends Fragment implements
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
-                //retrieve user information from the database
+
                 setProfileWidgets(mFirebaseMethods.getUserSettings(dataSnapshot));
 
-                //retrieve images for the user in question
 
             }
 

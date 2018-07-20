@@ -43,7 +43,7 @@ import com.family.ghost.fam.models.Story;
 import com.family.ghost.fam.models.UserAccountSettings;
 
 /**
- * Created by User on 5/28/2017.
+ * Created by Ghost on 5/28/2018.
  */
 
 public class HomeFragment extends Fragment implements OnUpdateListener, OnLoadListener {
@@ -302,9 +302,7 @@ public class HomeFragment extends Fragment implements OnUpdateListener, OnLoadLi
         mUserAccountSettings = new ArrayList<>();
     }
 
-    /**
-     //     * Retrieve all user id's that current user is following
-     //     */
+
     private void getFollowing() {
         Log.d(TAG, "getFollowing: searching for following");
 

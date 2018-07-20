@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
- * Created by User on 6/4/2017.
+ * Created by Ghost on 6/4/2018.
  */
 
 public class SectionsStatePagerAdapter extends FragmentStatePagerAdapter {

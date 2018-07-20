@@ -22,7 +22,7 @@ import com.family.ghost.fam.Login.LoginActivity;
 import com.family.ghost.fam.R;
 
 /**
- * Created by User on 6/4/2017.
+ * Created by Ghost on 6/4/2018.
  */
 
 public class SignOutFragment extends Fragment {
@@ -70,9 +70,7 @@ public class SignOutFragment extends Fragment {
      */
 
 
-    /**
-     * Setup the firebase auth object
-     */
+
     private void setupFirebaseAuth(){
         Log.d(TAG, "setupFirebaseAuth: setting up firebase auth.");
 

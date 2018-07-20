@@ -5,7 +5,7 @@ import android.util.AttributeSet;
 import android.widget.ProgressBar;
 
 /**
- * Created by User on 11/27/2017.
+ * Created by Ghost on 11/27/2018.
  */
 
 public class MyProgressBar extends ProgressBar {

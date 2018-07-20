@@ -14,7 +14,7 @@ import android.widget.Toast;
 import com.family.ghost.fam.R;
 
 /**
- * Created by User on 7/10/2017.
+ * Created by Ghost on 7/06/2018.
  */
 
 public class ConfirmPasswordDialog extends DialogFragment {

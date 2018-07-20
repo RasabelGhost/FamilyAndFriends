@@ -13,7 +13,7 @@ import org.json.JSONException;
 
 
 /**
- * Created by User on 11/27/2017.
+ * Created by Ghost on 11/27/2018.
  */
 
 class MyGLSurfaceView extends GLSurfaceView  {

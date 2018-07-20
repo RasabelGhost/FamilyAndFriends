@@ -21,7 +21,7 @@ import com.family.ghost.fam.models.Photo;
 import com.family.ghost.fam.models.User;
 
 /**
- * Created by User on 5/28/2017.
+ * Created by Ghost on 5/28/2018.
  */
 
 public class ProfileActivity extends AppCompatActivity implements

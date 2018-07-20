@@ -3,7 +3,7 @@ package com.family.ghost.fam.models;
 import java.util.List;
 
 /**
- * Created by User on 8/22/2017.
+ * Created by Ghost on 8/22/2018.
  */
 
 public class Comment {

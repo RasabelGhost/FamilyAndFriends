@@ -2,7 +2,7 @@ package com.family.ghost.fam.easyvideoplayer;
 
 import android.net.Uri;
 
-/** @author Aidan Follestad (afollestad) */
+
 public interface EasyVideoCallback {
 
   void onStarted(EasyVideoPlayer player);

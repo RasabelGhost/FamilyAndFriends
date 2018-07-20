@@ -25,6 +25,7 @@ import com.family.ghost.fam.Share.ShareActivity;
 import com.family.ghost.fam.Util.MainfeedListAdapter;
 import com.family.ghost.fam.about.AboutActivity;
 import com.family.ghost.fam.adapter.FragmentAdapter;
+import com.family.ghost.fam.cal.MainActivity;
 import com.family.ghost.fam.map.MapActivity;
 import com.family.ghost.fam.notification.NotificationActivity;
 import com.family.ghost.fam.singleActivitys.AllMembersActivity;
@@ -350,18 +351,18 @@ public class HomeActivity extends AppCompatActivity implements
                 startActivity(intent);
                 break;
 
-            case R.id.nav_recycler_and_swipe_refresh:
-                intent.setClass(this, NotificationActivity.class);
-                startActivity(intent);
-                break;
+//            case R.id.nav_recycler_and_swipe_refresh:
+//                intent.setClass(this, NotificationActivity.class);
+//                startActivity(intent);
+//                break;
 
             case R.id.nav_calendar:
                 intent.setClass(this, CalendarActivity.class);
                 startActivity(intent);
                 break;
 
-            case R.id.nav_all_members:
-                intent.setClass(this, AllMembersActivity.class);
+            case R.id.nav_remender:
+                intent.setClass(this, MainActivity.class);
                 startActivity(intent);
                 break;
 
@@ -381,8 +382,8 @@ public class HomeActivity extends AppCompatActivity implements
                 break;
 
             case R.id.nav_settings:
-                intent.setClass(this, SettingsActivity.class);
-                startActivity(intent);
+               // intent.setClass(this, SettingsActivity.class);
+                //startActivity(intent);
                 break;
 
             case R.id.nav_about:
@@ -500,27 +501,23 @@ public class HomeActivity extends AppCompatActivity implements
         ImageLoader.getInstance().init(universalImageLoader.getConfig());
     }
 
-    /**
-     * Responsible for adding the 3 tabs: Camera, Home, Messages
-     */
+
     private void setupViewPager(){
         SectionsPagerAdapter adapter = new SectionsPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new CameraFragment()); //index 0
+        //adapter.addFragment(new CameraFragment()); //index 0
         adapter.addFragment(new HomeFragment()); //index 1
-        adapter.addFragment(new MessagesFragment()); //index 2
+       // adapter.addFragment(new MessagesFragment()); //index 2
         mViewPager.setAdapter(adapter);
 
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
-        tabLayout.setupWithViewPager(mViewPager);
+//        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+//        tabLayout.setupWithViewPager(mViewPager);
 
-        tabLayout.getTabAt(0).setIcon(R.drawable.ic_camera);
-        tabLayout.getTabAt(1).setIcon(R.drawable.ic_instagram_black);
-        tabLayout.getTabAt(2).setIcon(R.drawable.ic_arrow);
+        //tabLayout.getTabAt(0).setIcon(R.drawable.ic_camera);
+      //  tabLayout.getTabAt(0).setIcon(R.drawable.ic_instagram_black);
+      //  tabLayout.getTabAt(2).setIcon(R.drawable.ic_arrow);
     }
 
-    /**
-     * BottomNavigationView setup
-     */
+
     private void setupBottomNavigationView(){
         Log.d(TAG, "setupBottomNavigationView: setting up BottomNavigationView");
         BottomNavigationViewEx bottomNavigationViewEx = (BottomNavigationViewEx) findViewById(R.id.bottomNavViewBar);
@@ -536,10 +533,7 @@ public class HomeActivity extends AppCompatActivity implements
     ------------------------------------ Firebase ---------------------------------------------
      */
 
-    /**
-     * checks to see if the @param 'user' is logged in
-     * @param user
-     */
+
      private void checkCurrentUser(FirebaseUser user){
          Log.d(TAG, "checkCurrentUser: checking if user is logged in.");
 
@@ -548,9 +542,7 @@ public class HomeActivity extends AppCompatActivity implements
              startActivity(intent);
          }
      }
-    /**
-     * Setup the firebase auth object
-     */
+
     private void setupFirebaseAuth(){
         Log.d(TAG, "setupFirebaseAuth: setting up firebase auth.");
 

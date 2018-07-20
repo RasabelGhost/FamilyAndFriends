@@ -30,7 +30,7 @@ import com.family.ghost.fam.Util.FileSearch;
 import com.family.ghost.fam.Util.GridImageAdapter;
 
 /**
- * Created by User on 5/28/2017.
+ * Created by Ghost on 5/28/2018.
  */
 
 public class GalleryFragment extends Fragment {
@@ -154,16 +154,16 @@ public class GalleryFragment extends Fragment {
         Log.d(TAG, "setupGridView: directory chosen: " + selectedDirectory);
         final ArrayList<String> imgURLs = FileSearch.getFilePaths(selectedDirectory);
 
-        //set the grid column width
+
         int gridWidth = getResources().getDisplayMetrics().widthPixels;
         int imageWidth = gridWidth/NUM_GRID_COLUMNS;
         gridView.setColumnWidth(imageWidth);
 
-        //use the grid adapter to adapter the images to gridview
+
         GridImageAdapter adapter = new GridImageAdapter(getActivity(), R.layout.layout_grid_imageview, mAppend, imgURLs);
         gridView.setAdapter(adapter);
         if (imgURLs != null && imgURLs.size()>=1) {
-            //set the first image to be displayed when the activity fragment view is inflated
+
             try {
                 setImage(imgURLs.get(0), galleryImage, mAppend);
                 mSelectedImage = imgURLs.get(0);

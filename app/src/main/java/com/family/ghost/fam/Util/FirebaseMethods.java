@@ -47,7 +47,7 @@ import com.family.ghost.fam.models.UserAccountSettings;
 import com.family.ghost.fam.models.UserSettings;
 
 /**
- * Created by User on 6/26/2017.
+ * Created by Ghost on 6/26/2017.
  */
 
 public class FirebaseMethods {
@@ -431,13 +431,7 @@ public class FirebaseMethods {
         return count;
     }
 
-    /**
-     * Update 'user_account_settings' node for the current user
-     * @param displayName
-     * @param website
-     * @param description
-     * @param phoneNumber
-     */
+    
     public void updateUserAccountSettings(String displayName, String website, String description, long phoneNumber){
 
         Log.d(TAG, "updateUserAccountSettings: updating user account settings.");

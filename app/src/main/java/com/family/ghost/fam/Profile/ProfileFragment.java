@@ -49,7 +49,7 @@ import com.family.ghost.fam.models.UserAccountSettings;
 import com.family.ghost.fam.models.UserSettings;
 
 /**
- * Created by User on 6/29/2017.
+ * Created by Ghost on 6/29/2018.
  */
 
 public class ProfileFragment extends Fragment {
@@ -316,9 +316,6 @@ public class ProfileFragment extends Fragment {
     }
 
 
-        /**
-     * Responsible for setting up the profile toolbar
-     */
     private void setupToolbar(){
 
         ((ProfileActivity)getActivity()).setSupportActionBar(toolbar);
@@ -334,9 +331,7 @@ public class ProfileFragment extends Fragment {
         });
     }
 
-        /**
-     * BottomNavigationView setup
-     */
+
     private void setupBottomNavigationView(){
         Log.d(TAG, "setupBottomNavigationView: setting up BottomNavigationView");
         BottomNavigationViewHelper.setupBottomNavigationView(bottomNavigationView);
@@ -346,13 +341,7 @@ public class ProfileFragment extends Fragment {
         menuItem.setChecked(true);
     }
 
-      /*
-    ------------------------------------ Firebase ---------------------------------------------
-     */
 
-    /**
-     * Setup the firebase auth object
-     */
     private void setupFirebaseAuth(){
         Log.d(TAG, "setupFirebaseAuth: setting up firebase auth.");
 

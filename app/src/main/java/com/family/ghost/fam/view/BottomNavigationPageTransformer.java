@@ -4,7 +4,7 @@ import android.support.v4.view.ViewPager;
 import android.view.View;
 
 /**
- * Created by ANTVR-24 on 17/04/06.
+ * Created by Ghost on 18/04/06.
  */
 
 public class BottomNavigationPageTransformer implements ViewPager.PageTransformer {

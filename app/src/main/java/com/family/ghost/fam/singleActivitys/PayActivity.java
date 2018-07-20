@@ -1,5 +1,6 @@
 package com.family.ghost.fam.singleActivitys;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -7,16 +8,10 @@ import android.support.v7.widget.Toolbar;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
-import com.anychart.anychart.AnyChart;
-import com.anychart.anychart.AnyChartView;
-import com.anychart.anychart.Availability;
-import com.anychart.anychart.AvailabilityPeriod;
-import com.anychart.anychart.DataEntry;
-import com.anychart.anychart.Pie;
-import com.anychart.anychart.Resource;
-import com.anychart.anychart.TimeTrackingMode;
-import com.anychart.anychart.ValueDataEntry;
 import com.family.ghost.fam.R;
 
 import java.util.ArrayList;
@@ -28,7 +23,13 @@ import java.util.List;
 
 import com.family.ghost.fam.R;
 
+import de.codecrafters.tableview.TableView;
+import de.codecrafters.tableview.toolkit.SimpleTableDataAdapter;
+
 public class PayActivity extends AppCompatActivity {
+
+    private static final String[][] DATA_TO_SHOW = { { "This", "is", "a", "test" },
+            { "and", "a", "second", "test" } };
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,16 +43,13 @@ public class PayActivity extends AppCompatActivity {
         }
 
 
-        Pie pie = AnyChart.pie();
+//        TableView tableView = (TableView) findViewById(R.id.tableView);
 
-        List<DataEntry> data = new ArrayList<>();
-        data.add(new ValueDataEntry("John", 10000));
-        data.add(new ValueDataEntry("Jake", 12000));
-        data.add(new ValueDataEntry("Peter", 18000));
 
-        AnyChartView anyChartView = (AnyChartView) findViewById(R.id.any_chart_view);
-        anyChartView.setChart(pie);
 
+        TableView<String[]> tableView = (TableView<String[]>) findViewById(R.id.tableView);
+        //tableView.setColumnCount(4);
+        tableView.setDataAdapter(new SimpleTableDataAdapter(this, DATA_TO_SHOW));
 
     }
 }

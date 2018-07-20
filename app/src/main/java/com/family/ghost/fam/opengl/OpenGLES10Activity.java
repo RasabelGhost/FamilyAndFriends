@@ -20,7 +20,7 @@ import com.family.ghost.fam.models.UserStories;
 
 
 /**
- * Created by User on 11/27/2017.
+ * Created by Ghost on 11/27/2018.
  */
 
 public class OpenGLES10Activity extends AppCompatActivity{

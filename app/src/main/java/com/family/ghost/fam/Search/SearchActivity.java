@@ -35,7 +35,7 @@ import com.family.ghost.fam.Util.UserListAdapter;
 import com.family.ghost.fam.models.User;
 
 /**
- * Created by User on 5/28/2017.
+ * Created by Ghost on 5/28/2018.
  */
 
 public class SearchActivity extends AppCompatActivity{

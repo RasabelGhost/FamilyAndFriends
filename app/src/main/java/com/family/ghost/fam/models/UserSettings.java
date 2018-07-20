@@ -1,7 +1,7 @@
 package com.family.ghost.fam.models;
 
 /**
- * Created by User on 6/30/2017.
+ * Created by Ghost on 6/30/2018.
  */
 
 public class UserSettings {

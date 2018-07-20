@@ -34,7 +34,7 @@ import com.family.ghost.fam.models.Comment;
 import com.family.ghost.fam.models.UserAccountSettings;
 
 /**
- * Created by User on 8/22/2017.
+ * Created by Ghost on 8/22/2017.
  */
 
 public class CommentListAdapter extends ArrayAdapter<Comment> {
@@ -135,10 +135,7 @@ public class CommentListAdapter extends ArrayAdapter<Comment> {
         return convertView;
     }
 
-    /**
-     * Returns a string representing the number of days ago the post was made
-     * @return
-     */
+
     private String getTimestampDifference(Comment comment){
         Log.d(TAG, "getTimestampDifference: getting timestamp difference.");
 

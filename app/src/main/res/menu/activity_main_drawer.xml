@@ -8,18 +8,18 @@
             android:icon="@drawable/ic_send_now"
             android:title="@string/nav_add_new_post" />
 
-        <item
-            android:id="@+id/nav_recycler_and_swipe_refresh"
-            android:icon="@drawable/ic_format_list_bulleted_black_24dp"
-            android:title="@string/nav_recycler_view" />
+        <!--<item-->
+            <!--android:id="@+id/nav_recycler_and_swipe_refresh"-->
+            <!--android:icon="@drawable/ic_lis"-->
+            <!--android:title="@string/nav_recycler_view" />-->
         <item
             android:id="@+id/nav_calendar"
             android:icon="@drawable/ic_panorama_18dp"
             android:title="@string/nav_calendar" />
         <item
-            android:id="@+id/nav_all_members"
+            android:id="@+id/nav_remender"
             android:icon="@drawable/group"
-            android:title="@string/nav_all_members" />
+            android:title="Event Remender" />
 
         <item
             android:id="@+id/nav_map"
@@ -28,7 +28,7 @@
 
         <item
             android:id="@+id/nav_random"
-            android:icon="@drawable/visited"
+            android:icon="@drawable/ic_random"
             android:title="@string/nav_all_Random" />
 
         <item
@@ -42,15 +42,15 @@
     <group>
         <item
             android:id="@+id/nav_about"
-            android:icon="@drawable/ic_info_black_24dp"
+            android:icon="@drawable/ic_info"
             android:title="@string/nav_about" />
         <item
             android:id="@+id/nav_pay"
-            android:icon="@drawable/ic_monetization_on_black_24dp"
+            android:icon="@drawable/ic_pay"
             android:title="@string/nav_pay" />
         <item
             android:id="@+id/nav_settings"
-            android:icon="@drawable/ic_settings_black_24dp"
+            android:icon="@drawable/ic_set"
             android:title="@string/nav_settings" />
     </group>
 

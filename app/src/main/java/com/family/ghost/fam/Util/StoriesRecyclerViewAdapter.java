@@ -28,7 +28,7 @@ import com.family.ghost.fam.opengl.OpenGLES10Activity;
 
 
 /**
- * Created by User on 12/27/2017.
+ * Created by Ghost on 12/27/2018.
  */
 
 public class StoriesRecyclerViewAdapter extends RecyclerView.Adapter<StoriesRecyclerViewAdapter.ViewHolder> {

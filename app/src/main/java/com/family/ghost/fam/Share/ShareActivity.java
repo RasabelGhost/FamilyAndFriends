@@ -20,7 +20,7 @@ import com.family.ghost.fam.Util.Permissions;
 import com.family.ghost.fam.Util.SectionsPagerAdapter;
 
 /**
- * Created by User on 5/28/2017.
+ * Created by Ghost on 5/28/2018.
  */
 
 public class ShareActivity extends AppCompatActivity{
@@ -49,19 +49,12 @@ public class ShareActivity extends AppCompatActivity{
 
     }
 
-    /**
-     * return the current tab number
-     * 0 = GalleryFragment
-     * 1 = PhotoFragment
-     * @return
-     */
+
     public int getCurrentTabNumber(){
         return mViewPager.getCurrentItem();
     }
 
-    /**
-     * setup viewpager for manager the tabs
-     */
+
     private void setupViewPager(){
         SectionsPagerAdapter adapter =  new SectionsPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new GalleryFragment());
@@ -83,10 +76,7 @@ public class ShareActivity extends AppCompatActivity{
         return getIntent().getFlags();
     }
 
-    /**
-     * verifiy all the permissions passed to the array
-     * @param permissions
-     */
+
     public void verifyPermissions(String[] permissions){
         Log.d(TAG, "verifyPermissions: verifying permissions.");
 
@@ -97,11 +87,7 @@ public class ShareActivity extends AppCompatActivity{
         );
     }
 
-    /**
-     * Check an array of permissions
-     * @param permissions
-     * @return
-     */
+
     public boolean checkPermissionsArray(String[] permissions){
         Log.d(TAG, "checkPermissionsArray: checking permissions array.");
 
@@ -114,11 +100,7 @@ public class ShareActivity extends AppCompatActivity{
         return true;
     }
 
-    /**
-     * Check a single permission is it has been verified
-     * @param permission
-     * @return
-     */
+
     public boolean checkPermissions(String permission){
         Log.d(TAG, "checkPermissions: checking permission: " + permission);
 
@@ -134,9 +116,7 @@ public class ShareActivity extends AppCompatActivity{
         }
     }
 
-    /**
-     * BottomNavigationView setup
-     */
+
     private void setupBottomNavigationView(){
         Log.d(TAG, "setupBottomNavigationView: setting up BottomNavigationView");
         BottomNavigationViewEx bottomNavigationViewEx = (BottomNavigationViewEx) findViewById(R.id.bottomNavViewBar);

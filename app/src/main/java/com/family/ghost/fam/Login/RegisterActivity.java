@@ -27,7 +27,7 @@ import com.family.ghost.fam.Util.FirebaseMethods;
 import com.family.ghost.fam.models.User;
 
 /**
- * Created by User on 6/19/2017.
+ * Created by Ghost on 6/19/2018.
  */
 
 public class RegisterActivity extends AppCompatActivity {
@@ -90,9 +90,7 @@ public class RegisterActivity extends AppCompatActivity {
         }
         return true;
     }
-    /**
-     * Initialize the activity widgets
-     */
+
     private void initWidgets(){
         Log.d(TAG, "initWidgets: Initializing Widgets.");
         mEmail = (EditText) findViewById(R.id.input_email);
@@ -122,10 +120,7 @@ public class RegisterActivity extends AppCompatActivity {
     ------------------------------------ Firebase ---------------------------------------------
      */
 
-    /**
-     * Check is @param username already exists in teh database
-     * @param username
-     */
+
     private void checkIfUsernameExists(final String username) {
         Log.d(TAG, "checkIfUsernameExists: Checking if  " + username + " already exists.");
 
@@ -164,9 +159,7 @@ public class RegisterActivity extends AppCompatActivity {
         });
     }
 
-    /**
-     * Setup the firebase auth object
-     */
+
     private void setupFirebaseAuth(){
         Log.d(TAG, "setupFirebaseAuth: setting up firebase auth.");
 

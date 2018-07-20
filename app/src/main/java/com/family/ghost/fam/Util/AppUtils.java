@@ -8,7 +8,7 @@ import com.family.ghost.fam.R;
 
 
 /**
- * Created by zhang on 2017.11.22.
+ * Created by Ghost on 2018.05.22.
  */
 
 public class AppUtils {

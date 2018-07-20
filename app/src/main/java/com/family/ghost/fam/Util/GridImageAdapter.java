@@ -18,9 +18,6 @@ import java.util.ArrayList;
 
 import com.family.ghost.fam.R;
 
-/**
- * Created by User on 6/4/2017.
- */
 
 public class GridImageAdapter extends ArrayAdapter<String>{
 

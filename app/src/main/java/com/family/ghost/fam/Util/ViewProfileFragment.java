@@ -45,7 +45,7 @@ import com.family.ghost.fam.models.UserAccountSettings;
 import com.family.ghost.fam.models.UserSettings;
 
 /**
- * Created by User on 6/29/2017.
+ * Created by Ghost on 6/29/2018.
  */
 
 public class ViewProfileFragment extends Fragment {

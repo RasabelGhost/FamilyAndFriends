@@ -27,7 +27,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Created by zhang on 2016.08.07.
+ * Created by ghost on 2018.05.07.
  */
 public class NotificationAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements onMoveAndSwipedListener {
 

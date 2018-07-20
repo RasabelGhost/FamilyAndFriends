@@ -1,7 +1,7 @@
 package com.family.ghost.fam;
 
 /**
- * Created by zhang on 2016.09.23.
+ * Created by Ghost on 2016.09.23.
  */
 public class Constant {
 

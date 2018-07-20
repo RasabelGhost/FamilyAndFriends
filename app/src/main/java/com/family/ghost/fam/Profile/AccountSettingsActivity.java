@@ -27,7 +27,7 @@ import com.family.ghost.fam.Util.FirebaseMethods;
 import com.family.ghost.fam.Util.SectionsStatePagerAdapter;
 
 /**
- * Created by User on 6/4/2017.
+ * Created by Ghost on 6/4/2018.
  */
 
 public class AccountSettingsActivity extends AppCompatActivity {
@@ -137,10 +137,6 @@ public class AccountSettingsActivity extends AppCompatActivity {
 
     }
 
-
-    /**
-     * BottomNavigationView setup
-     */
     private void setupBottomNavigationView(){
         Log.d(TAG, "setupBottomNavigationView: setting up BottomNavigationView");
         BottomNavigationViewEx bottomNavigationViewEx = (BottomNavigationViewEx) findViewById(R.id.bottomNavViewBar);

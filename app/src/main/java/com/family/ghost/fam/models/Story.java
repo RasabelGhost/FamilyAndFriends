@@ -1,7 +1,7 @@
 package com.family.ghost.fam.models;
 
 /**
- * Created by User on 1/7/2018.
+ * Created by Ghost on 1/7/2018.
  */
 
 public class Story {

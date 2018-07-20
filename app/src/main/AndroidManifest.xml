@@ -17,10 +17,13 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
     <application
         android:name=".NavigationApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/famlogo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -119,6 +122,34 @@
             android:theme="@style/AppTheme.NoStatusBar">
 
         </activity>
+
+
+        <activity android:name=".cal.MainActivity">
+
+        </activity>
+
+        <activity android:name=".cal.CreateOrEditNote" android:parentActivityName=".cal.MainActivity">
+
+        </activity>
+
+        <activity android:name=".cal.CreateOrEditAlert" android:parentActivityName=".cal.MainActivity">
+
+        </activity>
+        <receiver android:name=".cal.AlarmSetter">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".cal.AlarmReceiver" android:enabled="true" />
+        <service android:name=".cal.AlarmService" android:enabled="true" />
+        <provider android:name=".cal.ReminderContentProvider"
+            android:authorities="com.example.kyle.reminder" android:exported="true"
+            android:grantUriPermissions="true" android:label="LentItemsProvider"
+            android:readPermission="com.family.ghost.fam.READ"
+            android:writePermission="com.family.ghost.fam.WRITE" />
+
+
+
     </application>
 
 </manifest>

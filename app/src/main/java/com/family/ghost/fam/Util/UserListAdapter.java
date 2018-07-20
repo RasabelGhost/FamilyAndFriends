@@ -27,7 +27,7 @@ import com.family.ghost.fam.models.User;
 import com.family.ghost.fam.models.UserAccountSettings;
 
 /**
- * Created by User on 9/17/2017.
+ * Created by Ghost on 9/17/2018.
  */
 
 public class UserListAdapter extends ArrayAdapter<User>{

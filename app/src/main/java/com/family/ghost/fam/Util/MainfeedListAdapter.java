@@ -47,7 +47,7 @@ import com.family.ghost.fam.models.User;
 import com.family.ghost.fam.models.UserAccountSettings;
 
 /**
- * Created by User on 9/22/2017.
+ * Created by Ghost on 9/22/2018.
  */
 
 public class MainfeedListAdapter extends ArrayAdapter<Photo> {

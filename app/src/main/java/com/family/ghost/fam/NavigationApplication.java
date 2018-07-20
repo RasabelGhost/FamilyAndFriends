@@ -6,6 +6,9 @@ import android.support.multidex.MultiDex;
 import android.text.TextUtils;
 import android.util.Log;
 
+
+import android.graphics.BitmapFactory;
+
 import com.mapbox.mapboxsdk.Mapbox;
 import com.squareup.leakcanary.LeakCanary;
 
@@ -45,5 +48,6 @@ public class NavigationApplication extends Application {
 
     Mapbox.getInstance(getApplicationContext(), mapboxAccessToken);
   }
+
 
 }

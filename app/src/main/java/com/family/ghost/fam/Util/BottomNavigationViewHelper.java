@@ -6,8 +6,10 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.util.Log;
+import android.util.Range;
 import android.view.MenuItem;
 
+import com.family.ghost.fam.singleActivitys.RandomActivity;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 import com.family.ghost.fam.Home.HomeActivity;
@@ -58,7 +60,7 @@ public class BottomNavigationViewHelper {
                         break;
 
                     case R.id.ic_alert:
-                        Intent intent4 = new Intent(context, LikesActivity.class);//ACTIVITY_NUM = 3
+                        Intent intent4 = new Intent(context, RandomActivity.class);//ACTIVITY_NUM = 3
                         context.startActivity(intent4);
                         callingActivity.overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                         break;

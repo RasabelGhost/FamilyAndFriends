@@ -9,7 +9,7 @@ import android.support.annotation.AttrRes;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
-/** @author Aidan Follestad (afollestad) */
+
 class Util {
 
   static String getDurationString(long durationMs, boolean negativePrefix) {

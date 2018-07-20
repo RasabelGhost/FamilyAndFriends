@@ -14,7 +14,7 @@ import com.family.ghost.fam.R;
 import com.family.ghost.fam.Util.BottomNavigationViewHelper;
 
 /**
- * Created by User on 5/28/2017.
+ * Created by Ghost on 5/28/2018.
  */
 
 public class LikesActivity extends AppCompatActivity{

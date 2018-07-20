@@ -1,7 +1,7 @@
 package com.family.ghost.fam.models;
 
 /**
- * Created by User on 8/21/2017.
+ * Created by Ghost on 8/21/2018.
  */
 
 public class Like {

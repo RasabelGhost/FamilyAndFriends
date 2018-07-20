@@ -18,7 +18,7 @@ import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
 import com.family.ghost.fam.R;
 
 /**
- * Created by User on 6/4/2017.
+ * Created by Ghost on 6/4/2018.
  */
 
 public class UniversalImageLoader {

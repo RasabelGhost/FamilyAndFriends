@@ -51,7 +51,7 @@ import java.lang.annotation.RetentionPolicy;
 import com.family.ghost.fam.R;
 
 
-/** @author Aidan Follestad (afollestad) */
+
 public class EasyVideoPlayer extends FrameLayout
     implements IUserMethods,
         TextureView.SurfaceTextureListener,
